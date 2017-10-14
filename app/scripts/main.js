@@ -59,6 +59,7 @@ $(function () {
 
   window.callback = function (data) {
     loadData(data);
+    $(".loading-layer").css("display","none")
     let uniqueValues = unique(pricingData, ['region', 'type', 'size']);
     render(uniqueValues, currencies);
 
