@@ -179,6 +179,7 @@ $(() => {
   const $currency = $('#currency-select');
 
   function loadData(data) {
+    $('#loading-bar').hide();
     data.config.regions.forEach((region) => {
       region.instanceTypes.forEach((instanceType) => {
         instanceType.sizes.forEach((size) => {
